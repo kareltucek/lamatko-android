@@ -33,6 +33,8 @@ class MainActivity : AppCompatActivity() {
         val cbShuffleDigits: CheckBox = findViewById(R.id.cbShuffleOrder)
         val cbShuffleCoding: CheckBox = findViewById(R.id.cbShuffleCoding)
         val cbDetail: CheckBox = findViewById(R.id.cbDetail)
+        val cbExtAlphabet: CheckBox = findViewById(R.id.cbExtendedAlphabets)
+        val cbInheritShuffles: CheckBox = findViewById(R.id.cbInheritShuffles)
 
 
         try {
@@ -41,6 +43,8 @@ class MainActivity : AppCompatActivity() {
                 digitDescription = tbDigits.text.toString(),
                 shuffleDigitOrder = cbShuffleDigits.isChecked,
                 shuffleDigitCoding = cbShuffleCoding.isChecked,
+                obscureAlphabets = cbExtAlphabet.isChecked,
+                inheritDigitCoding = !cbInheritShuffles.isChecked,
                 timeoutMillis = 10000,
                 resultCount = 100
             )

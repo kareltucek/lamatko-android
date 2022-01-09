@@ -35,21 +35,43 @@
             android:id="@+id/cbShuffleOrder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Shuffle Order" />
 
         <CheckBox
             android:id="@+id/cbShuffleCoding"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Shuffle Coding" />
+
+        <CheckBox
+            android:id="@+id/cbInheritShuffles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Independent shuffles" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbExtendedAlphabets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ext abc" />
 
         <CheckBox
             android:id="@+id/cbDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="details" />
-
+            android:text="Details" />
     </LinearLayout>
 
     <Button
