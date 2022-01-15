@@ -14,6 +14,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:selectAllOnFocus="true"
         android:text="1 2 3 4" />
 
     <EditText
@@ -72,6 +73,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Details" />
+
+        <CheckBox
+            android:id="@+id/cbSorted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Sorted" />
     </LinearLayout>
 
     <Button

@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         val cbDetail: CheckBox = findViewById(R.id.cbDetail)
         val cbExtAlphabet: CheckBox = findViewById(R.id.cbExtendedAlphabets)
         val cbInheritShuffles: CheckBox = findViewById(R.id.cbInheritShuffles)
+        val cbSorted: CheckBox = findViewById(R.id.cbSorted)
 
 
         try {
@@ -45,6 +46,7 @@ class MainActivity : AppCompatActivity() {
                 shuffleDigitCoding = cbShuffleCoding.isChecked,
                 obscureAlphabets = cbExtAlphabet.isChecked,
                 inheritDigitCoding = !cbInheritShuffles.isChecked,
+                sortResults = cbSorted.isChecked,
                 timeoutMillis = 10000,
                 resultCount = 100
             )
